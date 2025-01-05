@@ -25,5 +25,5 @@ test("should sort by health, descending", () => {
     { name: "голый землекоп", health: 9 },
   ];
 
-  expect(expected).toEqual(charsList.sort(sorter));
+  expect(sorter(charsList)).toEqual(expected);
 });
